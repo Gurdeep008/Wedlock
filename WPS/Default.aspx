@@ -14,7 +14,6 @@
 
         .service:hover{
             box-shadow: 0px 0px 30px grey;
-
         }
 
         .servicesec {
