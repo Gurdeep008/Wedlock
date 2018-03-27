@@ -49,6 +49,7 @@ namespace WPS
                 {
                     id_login_result.ForeColor = System.Drawing.Color.Green;
                     id_login_result.Text = "*Successful";
+                    Response.Redirect("~/Default.aspx");
                 }
 
             }
