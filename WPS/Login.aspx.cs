@@ -48,7 +48,7 @@ namespace WPS
                 else if (res.Equals("1"))
                 {
                     id_login_result.ForeColor = System.Drawing.Color.Green;
-                    id_login_result.Text = "Successful";
+                    id_login_result.Text = "*Successful";
                 }
 
             }
