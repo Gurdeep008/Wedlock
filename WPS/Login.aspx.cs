@@ -52,6 +52,8 @@ namespace WPS
                     Response.Redirect("~/Default.aspx");
                 }
 
+                db.closeConnection();
+
             }
 
         }

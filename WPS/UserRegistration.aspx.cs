@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -17,7 +18,10 @@ namespace WPS
         protected void id_venderreg_btn_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/VendorRegistration.aspx");
-            
+        }
+
+        protected void regbtn_Click(object sender, EventArgs e)
+        {
         }
 
     }

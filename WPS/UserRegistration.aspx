@@ -94,7 +94,7 @@
                 </div>
 
                 <div class="form-group col-md-12">
-                    <asp:Button ID="regbtn" CssClass="form-control btn-primary" runat="server" Text="Register" ValidationGroup="vg_userreg" />
+                    <asp:Button ID="regbtn" OnClick="regbtn_Click" CssClass="form-control btn-primary" runat="server" Text="Register" ValidationGroup="vg_userreg" />
                 </div>
 
             </div>

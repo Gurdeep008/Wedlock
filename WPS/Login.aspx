@@ -22,6 +22,10 @@
                 document.getElementById("<%=id_login_password.ClientID %>").type = "password";
             }
     }
+    function chk() {
+        var v = window.location;
+        alert(v);
+    }
     </script>
 
 </asp:Content>
@@ -35,7 +39,6 @@
 
             <div class="col-md-4">
                 <h1>Login</h1>
-
 
                 <div class="input-group">
                     <span class="input-group-addon ico"><i class="glyphicon glyphicon-user"></i></span>
@@ -57,7 +60,7 @@
                     <asp:Label runat="server" Text="Keep me logged in" AssociatedControlID="id_login_rememberme"></asp:Label>
                 </div>
                 <div class="form-group">
-                    <asp:Button runat="server" ID="id_login_btn" OnClick="id_login_btn_Click" Text="Login" CssClass="form-control btn-primary" />
+                    <asp:Button runat="server" ID="id_login_btn" OnClientClick="chk();" OnClick="id_login_btn_Click" Text="Login" CssClass="form-control btn-primary" />
                 </div>
                 <div class="form-group">
                     <a href="#">
