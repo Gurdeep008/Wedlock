@@ -87,8 +87,18 @@
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="id_email" ErrorMessage="*Email is required" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                     <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="id_email" ErrorMessage="*Email is invalid" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic"></asp:RegularExpressionValidator>
                 </div>
+                
+                 
 
-            </div>
         </div>
+    
     </div>
+        
+        <br/>
+        <div class="form-group col-md-2">
+            </div>
+        <div class="form-group col-md-8">
+        <asp:Button ID="btn_reg"  runat="server" CssClass="form-control btn-primary" Text="Register" ValidationGroup="vg_vendreg" />
+    </div>
+        </div>
 </asp:Content>

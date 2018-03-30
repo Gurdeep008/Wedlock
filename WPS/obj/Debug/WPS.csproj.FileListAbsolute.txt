@@ -22,3 +22,9 @@ D:\Github\Wedlock\WPS\bin\WPS.pdb
 D:\Github\Wedlock\WPS\obj\Debug\WPS.csprojResolveAssemblyReference.cache
 D:\Github\Wedlock\WPS\obj\Debug\WPS.dll
 D:\Github\Wedlock\WPS\obj\Debug\WPS.pdb
+D:\wedlockproject\wedlock\WPS\bin\WPS.dll.config
+D:\wedlockproject\wedlock\WPS\bin\WPS.dll
+D:\wedlockproject\wedlock\WPS\bin\WPS.pdb
+D:\wedlockproject\wedlock\WPS\obj\Debug\WPS.csprojResolveAssemblyReference.cache
+D:\wedlockproject\wedlock\WPS\obj\Debug\WPS.dll
+D:\wedlockproject\wedlock\WPS\obj\Debug\WPS.pdb
