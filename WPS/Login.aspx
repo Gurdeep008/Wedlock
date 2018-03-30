@@ -50,9 +50,13 @@
                     <asp:TextBox TextMode="Password" runat="server" ID="id_login_password" CssClass="form-control" placeholder="Password" required="required"></asp:TextBox>
                     <span id="id_login_remember_btn" title="Show password" class="input-group-addon ico" onclick="showPass();"><i class="glyphicon glyphicon-eye-open"></i></span>
                 </div>
+
                 <br />
                 <div class="input-group">
-                    <asp:Label ForeColor="Red" runat="server" ID="id_login_result" Text=""></asp:Label>
+                    <asp:RadioButtonList runat="server" ID="id_login_type_RadioButtonList" RepeatDirection="Horizontal">
+                        <asp:ListItem Text="&nbsp;User&nbsp;&nbsp;&nbsp;" Value="0"></asp:ListItem>
+                        <asp:ListItem Text="&nbsp;Vendor" Value="1"></asp:ListItem>
+                    </asp:RadioButtonList>
                 </div>
                 <br />
                 <div class="form-group">
@@ -67,6 +71,10 @@
                         <asp:Label runat="server" Text="Forgot password?"></asp:Label></a>
                 </div>
 
+                 <div class="input-group">
+                    <asp:Label ForeColor="Red" runat="server" ID="id_login_result" Text=""></asp:Label>
+                </div>
+                <br />
 
                 <%-- <div class="form-group">
                     <asp:Label runat="server" CssClass="lbl" Text="User name" AssociatedControlID="id_login_uname" required="required"></asp:Label>
