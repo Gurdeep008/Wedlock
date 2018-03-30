@@ -89,11 +89,52 @@
 
         <div class="row">
             <div class="panel-footer text-center">
-                <p>All Right Reserved &copy; 2018</p>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <p>All Right Reserved &copy; 2018</p>
+                </div>
+                <div class="col-md-4">
+                    <%--<asp:HyperLink runat="server" NavigateUrl="~/ManageUser.aspx" Text="Admin section"></asp:HyperLink>--%>
+                    <a data-toggle="modal" data-target="#myModal">Admin section</a>
+                    <%--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>--%>
+                </div>
             </div>
         </div>
 
+        <%-- Modal section --%>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
 
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Admin login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <asp:Label runat="server" Text="Username" AssociatedControlID="id_admin_username"></asp:Label>
+                            <asp:TextBox runat="server" ID="id_admin_username" required="required" CssClass="form-control" placeholder="Username"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:Label runat="server" Text="Password" AssociatedControlID="id_admin_password"></asp:Label>
+                            <asp:TextBox runat="server" ID="id_admin_password" required="required" placeholder="Password" TextMode="Password" CssClass="form-control"></asp:TextBox>
+                        </div>
+                        <div class="form-group">
+                            <asp:Label runat="server" ID="id_admin_res"></asp:Label>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <asp:Button runat="server" ID="id_admin_login_btn" Text="Login" CssClass="btn btn-primary" OnClick="id_admin_login_btn_Click" />
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            
+        <%-- Modal section --%>
     </form>
 </body>
 </html>

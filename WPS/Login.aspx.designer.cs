@@ -31,13 +31,13 @@ namespace WPS {
         protected global::System.Web.UI.WebControls.TextBox id_login_password;
         
         /// <summary>
-        /// id_login_result control.
+        /// id_login_type_RadioButtonList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label id_login_result;
+        protected global::System.Web.UI.WebControls.RadioButtonList id_login_type_RadioButtonList;
         
         /// <summary>
         /// id_login_rememberme control.
@@ -56,5 +56,14 @@ namespace WPS {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button id_login_btn;
+        
+        /// <summary>
+        /// id_login_result control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label id_login_result;
     }
 }
