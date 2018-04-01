@@ -64,8 +64,9 @@
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="Default.aspx">Manage User</a></li>
                                     <li class=""><a href="#">Manage Vender</a></li>
-                                    <li class=""><a href="#">Manage Admins</a></li>
+                                    <li class=""><a href="#">Manage Admin</a></li>
                                     <li><a href="#">CMS</a></li>
+                                    <li class=""><a href="#">Other Settings</a></li>
                                 </ul>
                                 <ul class="nav navbar-nav navbar-right">
                                     <%--<li><a href="UserRegistration.aspx"><span class="glyphicon glyphicon-user"></span>&nbsp;Sign Up</a></li>--%>
@@ -87,7 +88,7 @@
             </div>
 
         </div>
-      
+
     </form>
 </body>
 </html>
