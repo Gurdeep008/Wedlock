@@ -6,8 +6,8 @@
             /*border: 1px solid black;*/
         }
 
-        .bgc{
-            background-color:#f0f0e1;
+        .bgc {
+            background-color: #f0f0e1;
         }
     </style>
 
@@ -19,8 +19,8 @@
             <div class="col-md-2 bgs">
             </div>
             <div class="col-md-8 bgc">
-             
-                   <h1>User Registration</h1>
+
+                <h1>User Registration</h1>
                 <div class="form-group col-md-4">
                     <asp:Label runat="server" CssClass="lbl" Text="First name" AssociatedControlID="id_fname"></asp:Label>
                     <asp:TextBox ID="id_fname" runat="server" CssClass="form-control" placeholder="First name"></asp:TextBox>
@@ -77,13 +77,13 @@
 
                 <div class="form-group col-md-12">
                     <asp:Label runat="server" CssClass="lbl" Text="Address" AssociatedControlID="id_address"></asp:Label>
-                    <asp:TextBox ID="id_address" runat="server" CssClass="form-control"  TextMode="multiline" placeholder="Address"></asp:TextBox>
+                    <asp:TextBox ID="id_address" runat="server" CssClass="form-control" TextMode="multiline" placeholder="Address"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="requiredfieldvalidator" runat="server" ControlToValidate="id_address" ErrorMessage="*address is madatory" ForeColor="red" ValidationGroup="vg_userreg"></asp:RequiredFieldValidator>
                 </div>
 
                 <div class="form-group col-md-6">
                     <asp:Label runat="server" CssClass="lbl" Text="Choose a password" AssociatedControlID="id_password"></asp:Label>
-                    <asp:TextBox ID="id_password" runat="server" CssClass="form-control" TextMode="Password" placeholder="Password" ></asp:TextBox>
+                    <asp:TextBox ID="id_password" runat="server" CssClass="form-control" TextMode="Password" placeholder="Password"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="id_password" ErrorMessage="*Password is mandatory" ForeColor="Red" ValidationGroup="vg_userreg"></asp:RequiredFieldValidator>
                 </div>
 
@@ -99,17 +99,17 @@
 
             </div>
 
-             <div class="col-md-2 bgs">
-                    <div class="form-group">
-                        <h4><asp:Label runat="server" Text="Are you a Vendor?" AssociatedControlID="id_venderreg_btn"></asp:Label></h4>
-                        <asp:Button runat="server" OnClick="id_venderreg_btn_Click" CssClass="form-control btn-primary" Text="Register now" ID="id_venderreg_btn" />
-            </div>
-            <div class="col-md-2">
+            <div class="col-md-2 bgs">
+                <div class="form-group">
+                    <h4> <asp:Label runat="server" Text="Are you a Vendor?" AssociatedControlID="id_venderreg_btn"></asp:Label></h4>
+                    <asp:HyperLink Text="Register now" runat="server" NavigateUrl="~/VendorRegistration.aspx" ID="id_venderreg_btn" CssClass="form-control btn-primary text-center"></asp:HyperLink>
+                </div>
+                <div class="col-md-2">
+                </div>
+
             </div>
 
         </div>
-
-    </div>
 
     </div>
 </asp:Content>

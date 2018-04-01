@@ -226,6 +226,6 @@ namespace WPS {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button id_venderreg_btn;
+        protected global::System.Web.UI.WebControls.HyperLink id_venderreg_btn;
     }
 }
